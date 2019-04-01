@@ -83,9 +83,9 @@ header a:hover{
 /* Showcase */
 #showcase{
   min-height:400px;
-  background:url('../img/showcase.jpg') no-repeat 0 -400px;
+  background:url('/img/tekken-7-red-eyes-artwork-games-13406.jpg') no-repeat 0 -400px;
   text-align:center;
-  color:#ffffff;
+ /* color:#ffffff; */
 }
 
 #showcase h1{
@@ -151,13 +151,26 @@ footer{
   text-align: center;
 }
 
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
 /* Media Queries */
 @media(max-width: 768px){
   header #branding,
   header nav,
   header nav li,
-  #newsletter h1,
-  #newsletter form,
+  #currentStreams h1,
+
   #boxes .box,
   article#main-col,
   aside#sidebar{
@@ -174,13 +187,45 @@ footer{
     margin-top:40px;
   }
 
-  #newsletter button, .quote button{
-    display:block;
-    width:100%;
+  td:nth-child(2),th:nth-child(2){
+    background-color: #e8491d;
+    display: none;
   }
 
-  #newsletter form input[type="email"], .quote input, .quote textarea{
-    width:100%;
-    margin-bottom:5px;
+  .flex-container{
+    max-width: 200px;
   }
+  table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { border: 1px solid #35424a; }
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #35424a; 
+		position: relative;
+		padding-left: 30%; 
+	}
+	
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 30%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+  
 }
+

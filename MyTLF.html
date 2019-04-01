@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width">
     
 	  <meta name="keywords" content="Tekken 7 Frame Data and Stream Hub">
-  	<meta name="author" content="christopher Hermansson Kekev">
-    <title>Tekken Live Frame | MyTLF</title>
+    <meta name="author" content="Christopher Hermansson Kekev">
+    <meta name="google-signin-client_id" content="61792486479-u9ghqce0d6t49udco52cqmvvi9fb4e7s.apps.googleusercontent.com">
+    <title>Tekken Live Frame | Home</title>
     <link rel="stylesheet" href="./css/style.css">
     <script src="main.js"></script>
+    <script src="Logincredentials.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
   </head>
   <body>
     <header>
@@ -17,6 +21,8 @@
           <h1><span class="highlight">Tekken</span> Live Frame</h1>
         </div>
         <nav>
+            <div class="g-signin2" data-onsuccess="onSignIn"></div>
+
           <ul>
             <li class="current"><a href="index.html">Home</a></li>
             <li><a href="MyTLF.html">My TLF</a></li>
@@ -57,7 +63,7 @@
     </section>
 
     <footer>
-      <p>Footer</p>
+      
     </footer>
   </body>
 </html>
