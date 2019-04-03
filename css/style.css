@@ -83,9 +83,9 @@ header a:hover{
 /* Showcase */
 #showcase{
   min-height:400px;
-  background:url('../img/showcase.jpg') no-repeat 0 -400px;
+  background:url('/img/tekken-7-red-eyes-artwork-games-13406.jpg') no-repeat 0 -400px;
   text-align:center;
-  color:#ffffff;
+ /* color:#ffffff; */
 }
 
 #showcase h1{
@@ -151,13 +151,27 @@ footer{
   text-align: center;
 }
 
-/* Media Queries */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+/* Media Queries  */
 @media(max-width: 768px){
   header #branding,
   header nav,
   header nav li,
-  #newsletter h1,
-  #newsletter form,
+  #currentStreams h1,
+
   #boxes .box,
   article#main-col,
   aside#sidebar{
@@ -173,14 +187,31 @@ footer{
   #showcase h1{
     margin-top:40px;
   }
+th:nth-child(1),th:nth-child(2).th:nth-child(2).th:nth-child(4),th:nth-child(5),th:nth-child(6),th:nth-child(7),th:nth-child(8),th:nth-child(8){
 
-  #newsletter button, .quote button{
-    display:block;
-    width:100%;
-  }
 
-  #newsletter form input[type="email"], .quote input, .quote textarea{
-    width:100%;
-    margin-bottom:5px;
-  }
 }
+
+tr th:nth-child(8), tr td:nth-child(8){
+  display: none;
+}
+ 
+tr th:nth-child(3), tr td:nth-child(3){
+  display: none;
+}
+tr th:nth-child(6), tr td:nth-child(6){
+  display: none;
+}
+tr th:nth-child(7), tr td:nth-child(7){
+  display: none;
+}
+tr th:nth-child(8), tr td:nth-child(8){
+  display: none;
+}
+iframe{
+  height: 300px;
+  width:320px;
+}
+  
+}
+
