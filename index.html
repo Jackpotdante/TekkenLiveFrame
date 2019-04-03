@@ -5,10 +5,17 @@
     <meta name="viewport" content="width=device-width">
     
 	  <meta name="keywords" content="Tekken 7 Frame Data and Stream Hub">
-  	<meta name="author" content="christopher Hermansson Kekev">
+    <meta name="author" content="Christopher Hermansson Kekev">
+    <meta name="google-signin-client_id" content="61792486479-u9ghqce0d6t49udco52cqmvvi9fb4e7s.apps.googleusercontent.com">
     <title>Tekken Live Frame | Home</title>
     <link rel="stylesheet" href="./css/style.css">
     <script src="main.js"></script>
+    <script src="Logincredentials.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase-database.js"></script>
+    
   </head>
   <body>
     <header>
@@ -17,11 +24,14 @@
           <h1><span class="highlight">Tekken</span> Live Frame</h1>
         </div>
         <nav>
+            <div class="g-signin2" data-onsuccess="onSignIn"></div>
+
           <ul>
             <li class="current"><a href="index.html">Home</a></li>
             <li><a href="MyTLF.html">My TLF</a></li>
             <li><a href="Streams.html">Streams</a></li>
             <li><a href="Framedata.html">Frame Data</a></li>
+            <li><input type="button" onclick=callGoogleSignIn() value="Google Sign In"/></li>
           </ul>
         </nav>
       </div>
@@ -30,11 +40,18 @@
     <section id="showcase">
       <div class="container">
         
+        <iframe class="twitchPlayer" src="https://player.twitch.tv/?channel=mupaper" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe><a href="https://www.twitch.tv/mupaper?tt_content=text_link&tt_medium=live_embed" style="padding:2px 0px 4px; display:block; width:345px; font-weight:normal; font-size:10px; text-decoration:underline;"></a>
+        <iframe class="twitchPlayer" src="https://player.twitch.tv/?channel=continewtv" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe><a href="https://www.twitch.tv/shudy_yoshel?tt_content=text_link&tt_medium=live_embed" style="padding:2px 0px 4px; display:block; width:345px; font-weight:normal; font-size:10px; text-decoration:underline;"></a>
+      
       </div>
     </section>
 
     <section id="newsletter">
       <div class="container">
+        
+        
+          <iframe class="twitchPlayer" src="https://player.twitch.tv/?channel=poltan4412" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe><a href="https://www.twitch.tv/mupaper?tt_content=text_link&tt_medium=live_embed" style="padding:2px 0px 4px; display:block; width:345px; font-weight:normal; font-size:10px; text-decoration:underline;"></a>
+          <iframe class="twitchPlayer" src="https://player.twitch.tv/?channel=4LCH3M15T" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe><a href="https://www.twitch.tv/shudy_yoshel?tt_content=text_link&tt_medium=live_embed" style="padding:2px 0px 4px; display:block; width:345px; font-weight:normal; font-size:10px; text-decoration:underline;"></a>
         
        
       </div>
@@ -54,7 +71,12 @@
     </section>
 
     <footer>
-      <p>Footer</p>
+      
     </footer>
   </body>
+  <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.9.2/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.9.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.9.2/firebase-messaging.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.9.2/firebase-functions.js"></script>
 </html>
